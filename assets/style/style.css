@@ -95,35 +95,6 @@ nav a{ color: white;
       .section h3{
         font-size: 18px;
       }
-     
-    
-    .imigiesdiv{display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-area: 'building2 building3'
-                    'building4 building5'
-        ;}
-        .building2{
-            grid-area: building2;
-        }
-        .building3{
-            grid-area: building3;
-        }
-        .building4{
-            grid-area: building4;
-        }
-        .building5{
-            grid-area: building5;
-        }
-        .building6{
-            display: none;
-        }
-        .card{
-            display: flex;
-            justify-content: center;
-        }
-        
-
-   
 
 .section2{display: flex;
     justify-content: center;
@@ -315,9 +286,3 @@ span{
 @media(width<=1200px){
 
 }
-
-
-
-
-         
-
