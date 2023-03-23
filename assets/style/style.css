@@ -10,9 +10,11 @@ header{max-height: 387.56px;
 }
 .navdiv{
     display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;}
 nav ul{display: flex;
+        flex-wrap: wrap;
         gap: 43px;
         vertical-align: auto;
     } 
@@ -23,7 +25,6 @@ nav li{justify-content: center;
 nav a{ color: white;
         font-family: 'HelveticaNeue';
         font-size: 16px;
-        vertical-align: auto;
     }
 .contact{color: #171717; 
          padding: 18px  43px 18px 36px; 
@@ -31,10 +32,11 @@ nav a{ color: white;
          background-color:#FFFFFF ; 
         vertical-align: middle;} 
   
-@media(width<=768px ){
+@media(width<=1200px ){
     header{
         min-height: 185px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         padding-top: 40px;
         border-radius: 0px 0px 20px 20px;
@@ -42,7 +44,9 @@ nav a{ color: white;
     }
     .navdiv{display: none;} }              
 .section1{ display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
     margin-top: -100px; 
 
 }        
@@ -50,11 +54,11 @@ nav a{ color: white;
         display: flex;
         justify-content: center;
         }
- .sectiondiv1 img{ max-width: 1195px;
-            max-height:  600px; 
+ .sectiondiv1 img{ width: 100%;
+            
 }       
 
-.sectiondiv1 h3{
+.section1 h3{
     font-size: 28px;
     color: #171717;
     font-family: 'HelveticaNeue';
@@ -62,27 +66,34 @@ nav a{ color: white;
     margin-bottom: 60px;
 
 } 
-.imigiesdiv{
+.imigiesdiv{ width: 100%;
     display: flex;
     gap: 25px;
 } 
 
-@media(width<=768px ){
+@media(width<=1200px ){
    
       
     .section1 {
+        
         margin-top: -30px;
-        max-width: 375px;
+        /* max-width: 375px; */
       }
-      .sectiondiv1 {
+      .sectiondiv1 { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         max-width: 334px;
       }
-      .sectiondiv1 img {
-        max-width: 334px;
-        max-height: 210px;
+      /* .sectiondiv1 img {
+        width: 80%;
       }
-      .sectiondiv1 img{
-        max-width: 334px;
+      */
+      }
+      .section h3{
+        font-size: 18px;
       }
      
     
@@ -112,10 +123,11 @@ nav a{ color: white;
         }
         
 
-    }
+   
 
 .section2{display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
@@ -123,6 +135,7 @@ nav a{ color: white;
 .sectiondiv2{ display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 } 
 .section2 p {
     font-size: 16px;
@@ -285,6 +298,11 @@ span{
     font-weight: bold;
     font-family: Helvetica-Neue;
 }
+@media(width<=1200px){
+
+    
+}
+
 
 .last-div{
     display: flex;
@@ -294,6 +312,9 @@ span{
 
 
 } 
+@media(width<=1200px){
+
+}
 
 
 
